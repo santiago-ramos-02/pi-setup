@@ -1,0 +1,21 @@
+{
+  "default_model": "opencode/gpt-6-luna",
+  "default_effort": "high",
+  "model_profiles": {
+    "sdd-explore": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "sdd-proposal": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "sdd-design": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "sdd-verify": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "jd-judge-a": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "jd-judge-b": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "review-risk": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "review-resilience": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "review-reliability": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "gentle-ai-explore": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "gentle-ai-verify": { "model": "opencode/gpt-6-sol", "effort": "medium" },
+    "sdd-apply": { "model": "opencode/gpt-6-sol", "effort": "high" },
+    "sdd-remediate": { "model": "opencode/gpt-6-sol", "effort": "high" },
+    "jd-fix-agent": { "model": "opencode/gpt-6-sol", "effort": "high" },
+    "gentle-ai-worker": { "model": "opencode/gpt-6-sol", "effort": "high" }
+  }
+}

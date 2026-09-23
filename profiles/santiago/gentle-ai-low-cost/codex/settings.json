@@ -1,0 +1,5 @@
+{
+  "defaultModel": "gpt-6-sol",
+  "defaultProvider": "openai-codex",
+  "defaultThinkingLevel": "medium"
+}

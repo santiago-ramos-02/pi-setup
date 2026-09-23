@@ -1,0 +1,27 @@
+{
+  "model_profiles": {
+    "sdd-init": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "low" },
+    "sdd-onboard": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "medium" },
+    "sdd-explore": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "high" },
+    "sdd-research": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "high" },
+    "sdd-proposal": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "high" },
+    "sdd-spec": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "high" },
+    "sdd-design": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "sdd-tasks": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "high" },
+    "sdd-status": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "low" },
+    "sdd-apply": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "sdd-verify": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "sdd-archive": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "low" },
+    "sdd-remediate": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "jd-judge-a": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "jd-judge-b": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "jd-fix-agent": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "review-risk": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "review-resilience": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "review-readability": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "medium" },
+    "review-reliability": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "gentle-ai-explore": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "high" },
+    "gentle-ai-verify": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "xhigh" },
+    "gentle-ai-worker": { "model": "opencode/muse-spark-1.3-contributor-free", "effort": "high" }
+  }
+}
