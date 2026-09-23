@@ -1,0 +1,9 @@
+{
+  "defaultModel": "gpt-6-astra",
+  "defaultProvider": "openai-codex",
+  "defaultThinkingLevel": "high",
+  "transport": "sse",
+  "theme": "dark",
+  "tuiMode": "fullscreen",
+  "hideThinkingBlock": true
+}

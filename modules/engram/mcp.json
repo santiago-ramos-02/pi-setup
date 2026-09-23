@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "engram": {
+      "args": [
+        "-e",
+        "const { spawn } = require('node:child_process'); const bin = process.env.ENGRAM_BIN || 'engram'; const child = spawn(bin, ['mcp', '--tools=mem_save,mem_update,mem_delete,mem_search,mem_context,mem_get_observation,mem_current_project,mem_stats,mem_timeline,mem_suggest_topic_key,mem_list_projects,mem_review,mem_doctor,mem_pin,mem_unpin'], { stdio: 'inherit' }); child.on('error', () => process.exit(127)); child.on('exit', (code, signal) => { if (typeof code === 'number') process.exit(code); process.kill(process.pid, signal || 'SIGTERM'); });"
+      ],
+      "command": "node",
+      "directTools": false,
+      "lifecycle": "lazy",
+      "excludeTools": [
+        "mem_save_prompt",
+        "mem_session_summary",
+        "mem_capture_passive",
+        "mem_session_start",
+        "mem_session_end",
+        "mem_judge",
+        "mem_compare"
+      ]
+    }
+  }
+}

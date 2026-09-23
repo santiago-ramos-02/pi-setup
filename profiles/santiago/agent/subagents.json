@@ -1,0 +1,96 @@
+{
+  "model_profiles": {
+    "sdd-init": {
+      "model": "openai-codex/gpt-6-luna",
+      "effort": "low"
+    },
+    "sdd-onboard": {
+      "model": "openai-codex/gpt-6-astra",
+      "effort": "high"
+    },
+    "sdd-explore": {
+      "model": "openai-codex/gpt-6-luna",
+      "effort": "low"
+    },
+    "sdd-research": {
+      "model": "openai-codex/gpt-6-luna",
+      "effort": "low"
+    },
+    "sdd-proposal": {
+      "model": "openai-codex/gpt-6-astra",
+      "effort": "high"
+    },
+    "sdd-spec": {
+      "model": "openai-codex/gpt-6-sol",
+      "effort": "high"
+    },
+    "sdd-design": {
+      "model": "openai-codex/gpt-6-astra",
+      "effort": "high"
+    },
+    "sdd-tasks": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "high"
+    },
+    "sdd-status": {
+      "model": "openai-codex/gpt-6-luna",
+      "effort": "low"
+    },
+    "sdd-apply": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "high"
+    },
+    "sdd-verify": {
+      "model": "openai-codex/gpt-6-sol",
+      "effort": "high"
+    },
+    "sdd-archive": {
+      "model": "openai-codex/gpt-6-luna",
+      "effort": "low"
+    },
+    "sdd-remediate": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "high"
+    },
+    "jd-judge-a": {
+      "model": "openai-codex/gpt-6-astra",
+      "effort": "high"
+    },
+    "jd-judge-b": {
+      "model": "openai-codex/gpt-6-astra",
+      "effort": "high"
+    },
+    "jd-fix-agent": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "high"
+    },
+    "review-risk": {
+      "model": "openai-codex/gpt-6-astra",
+      "effort": "high"
+    },
+    "review-resilience": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "high"
+    },
+    "review-readability": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "high"
+    },
+    "review-reliability": {
+      "model": "openai-codex/gpt-6-sol",
+      "effort": "high"
+    },
+    "gentle-ai-explore": {
+      "model": "openai-codex/gpt-6-luna",
+      "effort": "low"
+    },
+    "gentle-ai-verify": {
+      "model": "openai-codex/gpt-6-sol",
+      "effort": "high"
+    },
+    "gentle-ai-worker": {
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "high"
+    }
+  }
+}

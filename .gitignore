@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+auth.json
+sessions/
+npm/
+mcp-cache.json
+models-store.json
+gentle-agents/
+pi-pretty/
+*.log
+*.bak
+*.pre-*.bak
