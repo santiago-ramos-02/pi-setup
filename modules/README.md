@@ -7,7 +7,6 @@ Each directory describes one package or integration, its purpose, and what to ch
 - [Pi Web Access](web-access/README.md): web search/fetch capability for Pi.
 - [Context7](context7/README.md): library documentation lookup from Pi.
 - [Pi MCP Adapter](mcp-adapter/README.md): connect configured MCP servers as Pi tools.
-- [Copy Response](copy-response/README.md): copy assistant responses.
 - [BTW](btw/README.md): side questions without changing the main conversation flow.
 
 To add an npm package manually, inspect your existing `~/.pi/agent/settings.json` (Windows: `%USERPROFILE%\.pi\agent\settings.json`) and add its exact `npm:<package>@<version>` string to the `packages` array. Preserve other settings and package entries. Restart Pi and inspect its package list/startup output. To remove a package, remove only its matching array entry and restart Pi.
