@@ -1,0 +1,32 @@
+{
+  "kind": "gentle-pi.agent_model_profile",
+  "version": 1,
+  "name": "opencode-go",
+  "config": {
+    "orchestrator": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "medium" },
+    "sdd-init": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "low" },
+    "sdd-onboard": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "medium" },
+    "sdd-explore": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "high" },
+    "sdd-research": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "high" },
+    "sdd-proposal": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "high" },
+    "sdd-spec": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "high" },
+    "sdd-design": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "sdd-tasks": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "high" },
+    "sdd-status": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "low" },
+    "sdd-apply": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "sdd-verify": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "sdd-archive": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "low" },
+    "sdd-remediate": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "jd-judge-a": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "jd-judge-b": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "jd-fix-agent": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "review-risk": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "review-resilience": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "review-readability": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "medium" },
+    "review-reliability": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "review-validator": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "gentle-ai-explore": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "high" },
+    "gentle-ai-verify": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "xhigh" },
+    "gentle-ai-worker": { "model": "opencode-go/muse-spark-1.3-contributor", "thinking": "high" }
+  }
+}
