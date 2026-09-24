@@ -6,10 +6,12 @@ This repository is a set of readable setup notes and files for Pi. It is not an 
 
 - [`modules/`](modules/README.md): optional Pi packages and integrations, each documented separately.
 - [`skills/`](skills/README.md): optional skills you can copy into Pi's agent directory.
-- [`profiles/santiago/`](profiles/santiago/README.md): Santiago's personal Pi configurations, including Gentle-AI Low-cost/Recommended/Powerful presets for Codex and OpenCode, Astra high-reasoning, and OpenCode Free/Go. Do not copy these when you only want selected modules or skills.
+- [`profiles/santiago/`](profiles/santiago/README.md): Santiago's personal Pi configurations, including Gentle-AI Low-cost/Recommended/Powerful profiles adapted for Pi, plus Astra high-reasoning and OpenCode Free/Go profiles. Do not copy these when you only want selected modules or skills.
 - [`modules/engram/`](modules/engram/README.md): the Engram MCP configuration and persistent-observation guidance.
 
 Every piece is independent unless its own notes say otherwise. You do not need to install everything. Friends can choose individual modules and skills without adopting Santiago's profile.
+
+The `gentle-ai-low-cost`, `gentle-ai-recommended`, and `gentle-ai-powerful` folders are **Gentle-AI profiles adapted for Pi/Gentle-Pi**. Their `codex/` and `opencode/` subfolders select the model provider Pi uses. They are not standalone Codex or OpenCode app profiles.
 
 ## Pi directories
 

@@ -1,6 +1,8 @@
-# Gentle-AI Recommended
+# Gentle-AI Recommended profile for Pi
 
-GPT-6 adaptation of Gentle-AI's Recommended preset, for the Codex and OpenCode model providers in Pi/Gentle-Pi. The main session and strong lane use GPT-6 Sol at medium effort; implementation/fix work uses Sol at high effort; the cheap lane uses GPT-6 Luna at high effort. Terra is replaced by Sol, as requested.
+This is Gentle-AI's Recommended profile adapted for Pi/Gentle-Pi. It follows the Gentle-AI lane assignments with GPT-6 models and Terra replaced by Sol. The `codex/` and `opencode/` folders select which provider Pi uses. They do not configure the standalone Codex or OpenCode apps.
+
+The main session and strong lane use GPT-6 Sol at medium effort; implementation/fix work uses Sol at high effort; the cheap lane uses GPT-6 Luna at high effort.
 
 This is a manual Pi profile snapshot, not a native Codex CLI or OpenCode configuration. Choose either `codex/` or `opencode/` and merge its `settings.json` and `subagents.json` into `%USERPROFILE%\.pi\agent` (Windows) or `~/.pi/agent` (Linux), preserving unrelated settings and packages. Restart Pi or start a new session after applying.
 
