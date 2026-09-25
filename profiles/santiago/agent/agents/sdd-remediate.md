@@ -1,7 +1,7 @@
 ---
 name: sdd-remediate
 description: Correct bound failed SDD evidence within a human-authorized edit scope.
-model: opencode-go/muse-spark-1.3-contributor
+model: openai-codex/gpt-6-sol
 thinking: high
 tools:
   - read

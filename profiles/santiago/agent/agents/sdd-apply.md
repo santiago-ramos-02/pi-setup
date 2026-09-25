@@ -1,7 +1,7 @@
 ---
 name: sdd-apply
 description: Implement SDD tasks with strict TDD evidence and review workload guard.
-model: opencode-go/muse-spark-1.3-contributor
+model: openai-codex/gpt-6-sol
 thinking: high
 tools:
   - read

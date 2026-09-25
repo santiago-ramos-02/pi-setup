@@ -1,7 +1,7 @@
 ---
 name: sdd-design
 description: Design the technical approach for an SDD change.
-model: openai-codex/gpt-6-astra
+model: openai-codex/gpt-6-sol
 thinking: high
 tools:
   - read

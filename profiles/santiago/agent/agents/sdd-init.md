@@ -2,7 +2,7 @@
 name: sdd-init
 description: Initialize project SDD context, testing capabilities, and skill registry.
 model: openai-codex/gpt-6-luna
-thinking: low
+thinking: high
 tools:
   - read
   - grep

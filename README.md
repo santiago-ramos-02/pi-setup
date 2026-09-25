@@ -6,7 +6,7 @@ This repository is a set of readable setup notes and files for Pi. It is not an 
 
 - [`modules/`](modules/README.md): optional Pi packages and integrations, each documented separately.
 - [`skills/`](skills/README.md): optional skills you can copy into Pi's agent directory.
-- [`profiles/santiago/`](profiles/santiago/README.md): Santiago's Pi configuration and importable model profiles, including the three current Gentle-AI Codex presets, his custom profiles, and Muse variants.
+- [`profiles/santiago/`](profiles/santiago/README.md): Santiago's Pi configuration and his custom model profiles, plus an optional Free Muse export.
 - [`modules/engram/`](modules/engram/README.md): the Engram MCP configuration and persistent-observation guidance.
 
 Every piece is independent unless its own notes say otherwise. You do not need to install everything. Friends can choose individual modules and skills without adopting Santiago's profile.

@@ -2,7 +2,7 @@
 name: jd-judge-a
 description: Judgment Day blind adversarial reviewer A. Read-only; reports findings and does not fix code.
 model: openai-codex/gpt-6-astra
-thinking: high
+thinking: xhigh
 tools: *": false, read, grep, find, bash, mcp
 ---
 

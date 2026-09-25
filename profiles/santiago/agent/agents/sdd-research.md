@@ -2,7 +2,7 @@
 name: sdd-research
 description: Investigate optional SDD questions using authorized external sources.
 model: openai-codex/gpt-6-luna
-thinking: low
+thinking: high
 tools:
   - fetch_content
   - web_search

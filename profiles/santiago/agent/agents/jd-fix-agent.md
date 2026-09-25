@@ -1,7 +1,7 @@
 ---
 name: jd-fix-agent
 description: Judgment Day surgical fix agent for confirmed findings. Can edit code and run focused tests.
-model: opencode-go/muse-spark-1.3-contributor
+model: openai-codex/gpt-6-sol
 thinking: high
 tools: read, grep, find, edit, write, bash, mcp
 ---

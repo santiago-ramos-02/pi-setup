@@ -1,96 +1,107 @@
 {
-  "model_profiles": {
+  "kind": "gentle-pi.agent_model_profile",
+  "version": 1,
+  "name": "deep",
+  "config": {
+    "orchestrator": {
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "xhigh"
+    },
     "sdd-init": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "high"
+      "thinking": "high"
     },
     "sdd-onboard": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "high"
+      "thinking": "high"
     },
     "sdd-explore": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "high"
+      "thinking": "high"
     },
     "sdd-research": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "high"
+      "thinking": "high"
     },
     "sdd-proposal": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "medium"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "xhigh"
     },
     "sdd-spec": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "high"
+      "thinking": "high"
     },
     "sdd-design": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "xhigh"
     },
     "sdd-tasks": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "high"
+      "thinking": "high"
     },
     "sdd-status": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "low"
+      "thinking": "low"
     },
     "sdd-apply": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "xhigh"
     },
     "sdd-verify": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "high"
     },
     "sdd-archive": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "medium"
+      "thinking": "medium"
     },
     "sdd-remediate": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "high"
     },
     "jd-judge-a": {
       "model": "openai-codex/gpt-6-astra",
-      "effort": "xhigh"
+      "thinking": "xhigh"
     },
     "jd-judge-b": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "xhigh"
     },
     "jd-fix-agent": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "high"
     },
     "review-risk": {
       "model": "openai-codex/gpt-6-astra",
-      "effort": "xhigh"
+      "thinking": "xhigh"
     },
     "review-resilience": {
       "model": "openai-codex/gpt-6-astra",
-      "effort": "high"
+      "thinking": "high"
     },
     "review-readability": {
       "model": "openai-codex/gpt-6-astra",
-      "effort": "high"
+      "thinking": "high"
     },
     "review-reliability": {
       "model": "openai-codex/gpt-6-astra",
-      "effort": "high"
+      "thinking": "high"
+    },
+    "review-validator": {
+      "model": "openai-codex/gpt-6-astra",
+      "thinking": "high"
     },
     "gentle-ai-explore": {
       "model": "openai-codex/gpt-6-luna",
-      "effort": "high"
+      "thinking": "high"
     },
     "gentle-ai-verify": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "high"
     },
     "gentle-ai-worker": {
-      "model": "openai-codex/gpt-6-sol",
-      "effort": "high"
+      "model": "anthropic/claude-opus-5-5",
+      "thinking": "high"
     }
   }
 }

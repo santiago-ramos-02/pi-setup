@@ -1,7 +1,7 @@
 ---
 name: review-resilience
 description: R4 Resilience reviewer — fallbacks, retry/backoff, graceful degradation, observability, load, rollback, and SLO risks.
-model: opencode-go/muse-spark-1.3-contributor
+model: openai-codex/gpt-6-astra
 thinking: high
 tools:
   - "*": false

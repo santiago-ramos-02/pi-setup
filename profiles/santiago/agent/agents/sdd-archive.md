@@ -2,7 +2,7 @@
 name: sdd-archive
 description: Archive a completed SDD change into OpenSpec source specs.
 model: openai-codex/gpt-6-luna
-thinking: low
+thinking: medium
 tools:
   - read
   - grep

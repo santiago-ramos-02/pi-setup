@@ -2,7 +2,7 @@
 name: sdd-explore
 description: Explore an SDD change idea before proposal.
 model: openai-codex/gpt-6-luna
-thinking: low
+thinking: high
 tools:
   - read
   - grep

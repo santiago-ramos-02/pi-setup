@@ -2,7 +2,7 @@
 name: gentle-ai-explore
 description: Read-only exploration and mapping for generic non-SDD work.
 model: openai-codex/gpt-6-luna
-thinking: low
+thinking: high
 tools:
   - read
   - grep

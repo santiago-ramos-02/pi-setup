@@ -1,38 +1,28 @@
-# Pi model profiles
+# Model profiles
 
-Each JSON file here is a single-profile export for Gentle-Pi's `/gentle:profiles` selector. The installed profiles on Santiago's Windows Pi match these exports. `opencode-free.json` is an optional definition that is not installed on his machine because Pi currently has no `opencode` provider or Free Muse model in its catalog.
+These are Gentle-Pi `/gentle:profiles` exports. They are Santiago's routing choices, not upstream Gentle-AI presets. Each file contains only model assignments and effort levels, not credentials or memory.
 
-## Choose a profile
-
-| File | Main model | Purpose |
+| Profile | Main session | Routing intent |
 | --- | --- | --- |
-| `recommended.json` | Sol, medium | Santiago's custom mix of Sol, Luna, and Muse Go. This is not Gentle-AI's Recommended preset. |
-| `gentleman-original.json` | Sol, medium | Santiago's earlier Gentleman routing. |
-| `high-reasoning.json` | Astra, high | Santiago's expensive profile for difficult work. |
-| `gentle-ai-low-cost.json` | Luna, medium | Gentle-AI Codex Low-cost preset adapted to Pi. |
-| `gentle-ai-recommended.json` | Sol, medium | Gentle-AI Codex Recommended preset adapted to Pi. |
-| `gentle-ai-powerful.json` | Astra, medium | Gentle-AI Codex Powerful preset adapted to Pi. |
-| `opencode-go.json` | Muse Spark 1.3 Contributor, medium | Muse through Pi's `opencode-go` provider. |
-| `opencode-free.json` | Muse Spark 1.3 Contributor Free, medium | Optional. Requires a Pi provider exposing `opencode/muse-spark-1.3-contributor-free`. |
+| `daily` | Claude Opus 5.5, high | Opus for design and code quality, Luna high for scoped context work, Sol high for efficient verification, Astra for independent reviews. |
+| `cheap` | GPT-6 Luna, high | 20 Luna roles and 5 Sol roles. No Opus, Astra, or Muse. |
+| `deep` | Claude Opus 5.5, xhigh | Opus for the difficult implementation and design path, Astra for independent reviews, Luna for scoped context work. |
+| `codex` | GPT-6 Sol, medium | OpenAI-only fallback: Sol implementation, Astra review, Luna context work. |
+| `go` | Muse Spark 1.3 Contributor, medium | Muse through Pi's `opencode-go` provider, with effort raised for design, code, verification, and review. |
+| `free` | Muse Spark 1.3 Contributor Free, medium | Optional export. OpenCode exposes this model, but Santiago's Pi currently does not; do not import it into Pi unless that provider is installed there. |
 
-The three Gentle-AI profiles use the [Codex preset matrix in Gentle-AI's source](https://github.com/Gentleman-Programming/gentle-ai/blob/c5da5fd0f5f0a0b34cfc9bca0a8b5dd5a46213a8/internal/model/codex_model.go). That source already uses GPT-6. Its older `docs/agents.md` prose still describes GPT-5.6, so these files follow the code. The Codex presets and Pi's profile selector are separate systems; these exports translate the preset routing into Pi's 24 named roles.
+Across `daily`, `cheap`, `deep`, and `codex`, Luna uses **high** for init, onboarding, exploration, research, spec, tasks, and general exploration; **low** for status; and **medium** for archive. The review and Judgment Day roles are separate so independent reviewers can use a stronger model. Role IDs such as `jd-judge-a` are Gentle-Pi's installed agent IDs; they are not user-facing profile names.
 
-| Gentle-AI preset | Main session | Reasoning lane | Coding lane | Lightweight lane |
-| --- | --- | --- | --- | --- |
-| Low-cost | Luna, medium | Sol, medium | Luna, medium | Luna, high |
-| Recommended | Sol, medium | Sol, medium | Luna, high | Luna, high |
-| Powerful | Astra, medium | Astra, xhigh | Sol, high | Luna, high |
+These files are distinct from Gentle-AI's [Claude Code presets](https://github.com/Gentleman-Programming/gentle-ai/blob/main/internal/model/claude_model.go) and [Codex presets](https://github.com/Gentleman-Programming/gentle-ai/blob/main/internal/model/codex_model.go). Those upstream defaults change independently.
 
-These tier names compare Gentle-AI's Codex-only presets. Santiago's custom `recommended` profile routes nine roles to Muse Go, so the preset named Low-cost is not necessarily cheaper for his workload.
+## Import into Pi
 
-Gentle-AI puts SDD explore, research, proposal, design, verify, and the two Judgment Day judges in the reasoning lane; SDD apply and `jd-fix-agent` in the coding lane; and SDD onboard, spec, tasks, and archive in the lightweight lane. Pi's `sdd-proposal` is the counterpart to Gentle-AI's `sdd-propose`.
+1. Check `pi --list-models` for every provider used by the chosen profile and sign in to each provider on this machine.
+2. Copy one JSON file to `%USERPROFILE%\.pi\gentle-ai\profiles.export.json` on Windows or `~/.pi/gentle-ai/profiles.export.json` on Linux.
+3. In Pi, open `/gentle:profiles`, press `i` to import, then select and apply it. An existing name must be renamed or removed before importing its replacement.
 
-The extra Pi roles follow the same work types: init and status, readability review, and general exploration use the lightweight lane; remediation and general workers use the coding lane; risk, resilience, reliability, validator, and general verification use the reasoning lane. These extensions are local policy, not upstream Codex assignments.
+Applying a profile sets future subagent routing and the main model. An already-running main session may need to be reopened. Repository-level profile pins can override the global profile in that repository.
 
-## Import one profile
+## OpenCode Free
 
-1. Confirm the profile's provider and model appear in `pi --list-models` and sign in to that provider on this machine.
-2. Copy the chosen JSON file to `%USERPROFILE%\.pi\gentle-ai\profiles.export.json` on Windows or `~/.pi/gentle-ai/profiles.export.json` on Linux.
-3. Open `/gentle:profiles` in Pi and press `i` to import. Select the new entry and press Enter when you want to apply it.
-
-Importing adds a named profile; applying one changes the main model and all agent routes. The importer refuses an existing name, so inspect or rename an existing profile before importing a replacement. Keep the currently active profile until you choose to switch. The files contain model routing only, with no credentials, sessions, prompts, or Engram observations.
+OpenCode can start one Free Muse session with `opencode --model opencode/muse-spark-1.3-contributor-free`. That is an OpenCode model selection, not an installed Pi profile. Keep the paid Go model as the default for company work unless you have reviewed the Free provider's data policy for that code.

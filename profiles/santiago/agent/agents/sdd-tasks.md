@@ -1,7 +1,7 @@
 ---
 name: sdd-tasks
 description: Break SDD design/specs into implementation tasks with review workload forecast.
-model: opencode-go/muse-spark-1.3-contributor
+model: openai-codex/gpt-6-luna
 thinking: high
 tools:
   - read

@@ -1,7 +1,7 @@
 ---
 name: sdd-onboard
 description: Guide a user through a complete SDD cycle on a small real project change.
-model: openai-codex/gpt-6-astra
+model: openai-codex/gpt-6-luna
 thinking: high
 tools:
   - read

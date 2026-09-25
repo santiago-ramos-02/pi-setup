@@ -1,7 +1,7 @@
 ---
 name: review-readability
 description: R2 Readability reviewer — naming, complexity, intention, maintainability, review size, and context clarity.
-model: opencode-go/muse-spark-1.3-contributor
+model: openai-codex/gpt-6-astra
 thinking: high
 tools:
   - "*": false

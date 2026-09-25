@@ -1,7 +1,7 @@
 ---
 name: gentle-ai-worker
 description: Scoped package-owned implementation writer for bounded non-SDD work. Edits code, runs focused tests, and returns review-ready evidence without committing.
-model: opencode-go/muse-spark-1.3-contributor
+model: openai-codex/gpt-6-sol
 thinking: high
 tools: read, grep, find, edit, write, bash, mem_save, mcp
 ---
